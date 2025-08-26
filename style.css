@@ -1,0 +1,693 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Syne";
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+  background-color: rgb(253, 251, 245);
+}
+
+main {
+  padding: 20px 24px 24px;
+  padding-top: 3rem;
+  width: 100%;
+  border: 1px solid black;
+}
+main .line-nav {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-top: 1rem;
+}
+
+.navbar {
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar svg {
+  width: 3rem;
+  aspect-ratio: 1/1;
+}
+.navbar h1 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+.navbar .icon {
+  margin-left: 7rem;
+}
+.navbar .options {
+  display: none;
+}
+.navbar button {
+  display: none;
+}
+.navbar .circle-p {
+  display: none;
+}
+.navbar .line {
+  display: none;
+}
+
+.view-1 {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-1 p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-1 h1 {
+  font-weight: 400;
+  font-size: 3.8rem;
+  width: 70%;
+  line-height: 4rem;
+}
+.view-1 img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/0.56;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.view-2 .top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .top p {
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-2 .top h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  width: 95%;
+  line-height: 3rem;
+}
+.view-2 .top button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  background-color: black;
+  border-radius: 0.5em;
+  color: aliceblue;
+}
+.view-2 .line {
+  background-color: black;
+  height: 1px;
+}
+.view-2 .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-2 .elem svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-2 .elem h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+}
+.view-2 .elem p {
+  font-weight: 200;
+  opacity: 0.8;
+  font-size: 1.1rem;
+  width: 100%;
+}
+.view-2 .line {
+  margin-top: 0.1rem;
+  background-color: black;
+  height: 1px;
+}
+
+.line-end-1 {
+  margin-top: 1rem;
+  background-color: black;
+  height: 1px;
+}
+
+.view-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-3 h1 {
+  width: 20%;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.view-3 p {
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.view-3 .line {
+  background-color: black;
+  width: 100%;
+  height: 1px;
+  margin-top: 2rem;
+}
+.view-3 video {
+  margin-top: 1rem;
+  aspect-ratio: 2/1.3;
+}
+.view-3 .headings h1 {
+  width: 60%;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.view-3 .headings p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+
+.line-end-2 {
+  width: 100%;
+  background-color: black;
+  height: 2px;
+  margin-top: 2rem;
+}
+
+.view-4 {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.view-4 svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-4 p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+}
+.view-4 h1 {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.view-4 .line {
+  display: none;
+}
+.view-4 button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.2rem;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  word-spacing: 1rem;
+  font-size: 1rem;
+  font-family: "syne";
+  background-color: black;
+  border-radius: 0.5em;
+  border: none;
+  color: rgb(253, 251, 216);
+}
+
+.line {
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  margin-top: 2rem;
+}
+
+.view-5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.view-5 .box-1 {
+  display: flex;
+}
+.view-5 .box-1 svg {
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-5 .box-1 h1 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+.view-5 .box-2 p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: rgba(17, 18, 19, 0.71);
+  line-height: 1.5rem;
+}
+.view-5 .box-2 p span {
+  font-size: 1.5rem;
+}
+.view-5 .box-2 .circle-p {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.view-5 .box-2 .circle-p .p-1 {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.71);
+  border-radius: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-family: "consolas";
+}
+.view-5 .box-2 .circle-p .p-2 {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.71);
+  border-radius: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-family: "consolas";
+}
+.view-5 .box-2 .circle-p .p-3 {
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.71);
+  border-radius: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-family: "consolas";
+}
+.view-5 .box-2 .line {
+  height: 0.8px;
+}
+.view-5 .box-3 h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.view-5 .box-3 p {
+  margin-top: 1.5rem;
+}
+.view-5 .box-3 button {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  word-spacing: 1rem;
+  font-size: 1rem;
+  font-family: "syne";
+  background-color: black;
+  border-radius: 0.5em;
+  border: none;
+  color: rgb(253, 251, 216);
+}
+.view-5 .box-3 .line {
+  height: 0.8px;
+}
+.view-5 .box-4 h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.view-5 .box-4 p {
+  margin-top: 1.5rem;
+  word-spacing: 0.5rem;
+}
+.view-5 .box-4 .line {
+  height: 0.5px;
+}
+.view-5 .box-5 h1 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.view-5 .box-5 p {
+  margin-top: 1.5rem;
+  word-spacing: 0.5rem;
+}
+.view-5 .box-5 p span {
+  font-size: 1.2rem;
+}
+.view-5 .box-5 .line {
+  height: 0.5px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+footer p {
+  word-spacing: 0.6rem;
+}
+footer span {
+  text-decoration: underline;
+}
+footer pre {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1020px) {
+  main {
+    padding: 3rem;
+  }
+  main .line-nav {
+    height: 1.5px;
+    margin-top: 1.5rem;
+  }
+  .navbar {
+    margin-top: -3rem;
+  }
+  .navbar svg {
+    margin-top: 1rem;
+  }
+  .navbar h1 {
+    margin-top: 1rem;
+  }
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .icon {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .navbar .options {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.1rem;
+    gap: 2rem;
+    margin-left: 35rem;
+    margin-top: 2rem;
+  }
+  .navbar button {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 2.2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    word-spacing: 1rem;
+    font-size: 1rem;
+    font-family: "syne";
+    background-color: black;
+    border-radius: 0.5em;
+    border: none;
+    color: rgb(253, 251, 216);
+  }
+  .navbar .circle-p {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-left: 0.1rem;
+  }
+  .navbar .circle-p .p-1 {
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.71);
+    border-radius: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 4px 6px;
+    font-size: 1.1rem;
+    font-family: "consolas";
+    font-weight: 100;
+  }
+  .navbar .circle-p .p-2 {
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.71);
+    border-radius: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 4px 6px;
+    font-size: 1.1rem;
+    font-family: "consolas";
+  }
+  .navbar .circle-p .p-3 {
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.71);
+    border-radius: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 4px 6px;
+    font-size: 1.1rem;
+    font-family: "consolas";
+  }
+  .navbar .line {
+    margin: 1rem;
+    margin-top: 3rem;
+    height: 2.5rem;
+    width: 1.5px;
+    display: block;
+  }
+  .view-1 h1 {
+    font-size: 8rem;
+    width: 100%;
+    line-height: 8rem;
+    padding-bottom: 3rem;
+  }
+  .view-1 img {
+    aspect-ratio: 2/1;
+  }
+  .view-2 {
+    flex-direction: row;
+  }
+  .view-2 .line {
+    width: 1px;
+    height: initial;
+    margin-right: 1rem;
+  }
+  .view-2 .top {
+    width: 60%;
+    margin-top: 2rem;
+  }
+  .view-2 .top h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .view-2 .top button {
+    margin-top: 20rem;
+  }
+  .view-2 .bottom {
+    width: 40%;
+  }
+  .view-2 .bottom .line {
+    height: 1px;
+    width: initial;
+  }
+  .line-end-1 {
+    margin-top: 3rem;
+    height: 1px;
+  }
+  .view-3 {
+    margin-top: 2rem;
+    flex-direction: row;
+  }
+  .view-3 .box0 {
+    width: 48%;
+    position: relative;
+  }
+  .view-3 .box0 .sticky {
+    position: sticky;
+    top: 0;
+  }
+  .view-3 .box0 h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  .view-3 .box0 p {
+    width: 60%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .view-3 .line {
+    width: 2px;
+    height: initial;
+    margin-right: 1rem;
+  }
+  .view-3 .box {
+    width: 70%;
+    gap: 3rem;
+    display: grid;
+    grid-template-areas: "a b" "c d";
+  }
+  .view-3 .box video {
+    width: 100%;
+    aspect-ratio: 2/1;
+  }
+  .view-3 .a,
+  .view-3 b,
+  .view-3 c,
+  .view-3 d {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .view-3 .c {
+    margin-top: 5rem;
+  }
+  .view-3 .d {
+    margin-top: 5rem;
+  }
+  .line-end-2 {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    margin-top: 10rem;
+  }
+  .view-4 {
+    flex-direction: row;
+    width: 100%;
+  }
+  .view-4 .line {
+    width: 3px;
+    height: initial;
+    color: black;
+    margin-right: 2rem;
+    margin-left: -1rem;
+    display: block;
+  }
+  .view-4 .top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+  .view-4 .top svg {
+    position: relative;
+    margin-top: 30rem;
+  }
+  .view-4 .top p {
+    position: absolute;
+    margin-top: -1rem;
+    font-size: 1rem;
+  }
+  .view-4 .top h1 {
+    margin-left: -4rem;
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .view-4 .bottom {
+    width: 65%;
+  }
+  .view-4 .bottom p {
+    font-size: 1.8rem;
+    font-weight: 350;
+    line-height: 2.5rem;
+  }
+  .view-4 .bottom button {
+    margin-top: 25rem;
+  }
+  .view-5 {
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+  }
+  .view-5 .box-1 {
+    position: absolute;
+  }
+  .view-5 .box-1 svg {
+    margin-top: 1rem;
+  }
+  .view-5 .box-1 h1 {
+    margin-top: 2rem;
+  }
+  .view-5 .line {
+    display: none;
+  }
+  .view-5 .box-2 {
+    display: flex;
+    width: 35%;
+  }
+  .view-5 .box-2 .p-1 {
+    margin-top: 8rem;
+  }
+  .view-5 .box-2 .p-2 {
+    margin-top: 10rem;
+    margin-left: -6.5rem;
+  }
+  .view-5 .box-2 .circle-p {
+    display: flex;
+    flex-direction: column;
+  }
+  .view-5 .box-2 .circle-p .p-1 {
+    margin-left: -6.5rem;
+    margin-top: 15rem;
+  }
+  .view-5 .box-2 .circle-p .p-2 {
+    margin-top: -3.2rem;
+    margin-left: -3.5rem;
+  }
+  .view-5 .box-2 .circle-p .p-3 {
+    margin-top: -3.2rem;
+    margin-left: -0.5rem;
+  }
+  .view-5 .box-2 .line {
+    width: 1px;
+    height: initial;
+    color: black;
+    display: block;
+    margin-left: 25rem;
+  }
+  .view-5 .box-4 {
+    margin-left: 8rem;
+  }
+  .view-5 .box-5 {
+    margin-left: 10rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+  footer pre {
+    margin-left: 71rem;
+    margin-top: -0.1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
